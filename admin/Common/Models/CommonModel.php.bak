@@ -1,0 +1,21 @@
+<?php
+
+namespace Admin\Common\Models;
+
+use CodeIgniter\Model;
+
+class CommonModel extends Model {
+
+    public function getAgencyTypes($as_array=false){
+        $res = $this->db
+            ->table('soe_agency_types')
+            ->orderBy('name')
+            ->get();
+        if($as_array){
+            return $res->getResultArray();
+        } else {
+            return $res->getResult();
+        }
+    }
+
+}

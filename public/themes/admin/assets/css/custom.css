@@ -1,0 +1,54 @@
+.tableFixHead { overflow-y: auto; max-height: 500px; }
+
+table .custom-table {
+    display: table;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.custom-table td, .custom-table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.custom-table tr:nth-child(even){background-color: #f2f2f2;}
+
+.custom-table tr:hover {background-color: #ddd;}
+
+.custom-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #2C3B49;
+    color: white;
+}
+.modal-fullscreen {
+    width: 100vw;
+    max-width: none;
+    height: 100%;
+    margin: 0;
+}
+.disableddiv {
+    pointer-events: none;
+    opacity: 0.4;
+}
+.fileinput{
+	width:150px;
+	text-align:center;
+}
+
+.left-col {
+    float: left;
+    width: 25%;
+}
+ 
+.center-col {
+    float: left;
+    width: 50%;
+}
+ 
+.right-col {
+    float: left;
+    width: 25%;
+}
